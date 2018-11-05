@@ -1,0 +1,30 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h4>Enter your licence and an email will be sent to you with instructions.</h4>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Enter Licence No</ion-label>
+      <ion-input [(ngModel)]="licence_no" type="text" value=""></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button block (click)="checkAccount()" color="primary">Create Account</button>
+  </div>
+</ion-content>

@@ -1,11 +1,41 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+        <ion-title>
+            Licence Details  <button ion-button color="primary" float-right (click)="logout()">Logout</button>
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding="0">
+    <ion-card style="box-shadow: none">
+        <img style="width: 150px;margin: auto;border-radius: 5px"
+             src="{{user_image}}" b/>
+        <ion-list>
+            <ion-item>
+                <ion-icon name="ios-person-outline" item-start></ion-icon>
+                Name: {{ name }}
+            </ion-item>
+            <ion-item>
+                <ion-icon name="ios-card-outline" item-start></ion-icon>
+                Licence No: {{ licence_no}}
+            </ion-item>
+            <ion-item>
+                <ion-icon name="ios-card" item-start></ion-icon>
+                National ID: {{ national_id }}
+            </ion-item>
+            <ion-item>
+                <ion-icon name="ios-male" item-start></ion-icon>
+                Sex:{{ gender}}
+            </ion-item>
+            <ion-item>
+                <ion-icon name="ios-calendar" item-start></ion-icon>
+                DOB: {{ dob}}
+            </ion-item>
+            <ion-item>
+                <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+                Date of Issue: {{ date_of_issue}}
+            </ion-item>
+        </ion-list>
 
+    </ion-card>
 </ion-content>
